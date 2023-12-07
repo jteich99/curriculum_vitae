@@ -1,0 +1,34 @@
+\documentclass{article}
+
+
+% package imports
+% ---------------
+
+\usepackage[spanish]{babel} % for correct language and hyphenation and stuff
+\usepackage{calc}           % for easier length calculations (infix notation)
+\usepackage{enumitem}       % for configuring list environments
+\usepackage{fancyhdr}       % for setting header and footer
+\usepackage{fontspec}       % for fonts
+\usepackage{geometry}       % for setting margins (\newgeometry)
+\usepackage{graphicx}       % for pictures
+\usepackage{microtype}      % for microtypography stuff
+\usepackage{xcolor}         % for colours
+\usepackage{outlines}
+\usepackage{roboto}
+\usepackage{lipsum}
+
+% font families
+\defaultfontfeatures{Ligatures=TeX} % reportedly a good idea, see https://tex.stackexchange.com/a/37251
+
+\newfontfamily{\cvnamefont}{Roboto Medium}
+\newfontfamily{\cvsectionfont}{Roboto Medium}
+\newfontfamily{\cvtitlefont}{Roboto Regular}
+\newfontfamily{\cvdurationfont}{Roboto Light Italic}
+\newfontfamily{\cvheadingfont}{Roboto Regular}
+\setmainfont{Roboto Light}
+
+\begin{document}
+
+\lipsum[1-3]
+
+\end{document}
