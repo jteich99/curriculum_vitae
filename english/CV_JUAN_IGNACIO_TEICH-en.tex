@@ -22,6 +22,7 @@
 \usepackage{xcolor}         % for colours
 \usepackage{outlines}
 \usepackage{roboto}
+\usepackage{fontspec}
 % margin and column widths
 % ------------------------
 
@@ -235,16 +236,17 @@
 % personal info
 % -------------
 
-\cvpersonalinfo{
+% \cvpersonalinfo{
     % photo
-    \includegraphics[height=36mm]{../logos-photos/photo.jpg}
-}{
+  % \includegraphics[trim={0 7cm 0 5cm},clip,height=36mm]{../logos-photos/photo-JIT-2023.jpg}
+% }{
+  \flushright
     % name
     \cvname{Teich, Juan Ignacio}
 
     % address
     \cvpersonalinfolinewithicon{height=4mm}{../logos-photos/072-location.pdf}{
-        Azcuénaga 2529, Martinez, Buenos Aires, Argentina
+       Buenos Aires, Argentina
     }
 
     % phone number
@@ -263,57 +265,82 @@
     % }
 
     % date of birth
-        22-03-1999  -   24 años
-}
-
+        22-03-1999  ---   24 years
+% }
 
 % work experience
 % ---------------
-\cvsection{OBJETIVOS PROFESIONALES}
+\cvsection{PROFESSIONAL OBJECTIVES}
 
 \vspace{\cvbetweensectionandheadingextraskipamount}
 \cvitem{\cvheadingstyle{}}{
-    Continuar con mi carrera profesional, en busca de proyectos desafiantes de Ingeniería Mecánica, poniendo en uso las herramientas ganadas durante la carrera.
+    To continue my professional career, pursuing challenging projects and applying the skills acquired in my academic
+    journey.
 
-    Busco orientarme a la simulación para la solución de problemas de la industria.
+    I aim to focus on simulation and it's development to adress and better understand industry problems.
 }
 
 
-\cvsection{EXPERIENCIA LABORAL}
+\cvsection{WORK EXPERIENCE}
 
 \cvitem{
-	\cvdurationstyle{Octubre 2023 -- Presente}
+	\begin{minipage}{\textwidth}
+    \begin{flushright}
+		  % \centering
+      % \vfill
+		  \includegraphics[height=0.15\textwidth]{../logos-photos/Logo_STAMM.png}   
+	    % \vfill
+    \end{flushright}  
+  \end{minipage} \\
+  \vspace{0.3cm}
+  \cvdurationstyle{October 2023 -- Present}\\
 }{
-	\begin{minipage}{0.1\textwidth}
-		\centering
-		\includegraphics[width=0.8\textwidth]{../logos-photos/Logo_STAMM.png}   
-	\end{minipage}
-	\cvtitle{Numerical Simulations Specialist}
 	
-	\textbf{STÄMM Biotech}
-	
+  \cvtitle{Numerical Simulations Specialist}
+  \textbf{\large STÄMM Biotech}
+  
+  Responsabilities:
+  \begin{itemize}
+    \item Enhance meshing strategies for complex repetitive structures. 
+    \item Develop and run CFD simulations to validate and further improve existing in-house indirect simulation models.
+    \item Elaborate post-processing scripts, for various types of OpenFOAM simulations and python simulation scripts.
+    \item Formulate OOP code to further develop in-house indirect simulation model.
+  \end{itemize}
+  
+  Skills and tools:
+  \begin{itemize}
+    \item OpenFOAM, Code\_Saturne, snappyHexMesh, Salome Geometry and Meshing modules, Python, Object Oriented
+      Programming, Bash, Linux 
+  \end{itemize}
 	
 }
 
 \cvitem{
-    \cvdurationstyle{Noviembre 2022 -- Octubre 2023}
+ 	\begin{minipage}{\textwidth}
+   \begin{flushright}
+		  % \centering
+      % \vfill
+		  \includegraphics[width=0.6\textwidth]{../logos-photos/Logo_SG.png}   
+	    % \vfill
+    \end{flushright}  
+  \end{minipage} \\
+  \vspace{0.3cm}
+  \cvdurationstyle{November 2022 -- October 2023}
 }{
-    \begin{minipage}{0.1\textwidth}
-        \centering
-        \includegraphics[width=0.8\textwidth]{../logos-photos/Logo_SG.png}   
-    \end{minipage}
-    \cvtitle{Líder Junior de Proyectos Estratégicos}
+    \cvtitle{Junior Project Engineer}
 
-    \textbf{Saint-Gobain Argentina}
+    \textbf{\large Saint-Gobain Argentina}
 	
-	Tareas desarrolladas:
+  Responsabilities	
     \begin{itemize}
-        \item Líder de proyectos estratégicos, incluyendo el análisis de las necesidades de la companía para la continuidad del negocio, el diseño básico del proyecto y la implementación del mismo
-        \item Coordinación de equipos multidisciplinarios y stakeholders, buscando soluciones consensuadas cumpliendo alcance, tiempo y costo disponible
-        \item Soporte y análisis técnico para adquisiciones de nuevos negocios a nivel regional
+        \item Lead strategic projects, including analyzing the company's needs for business continuity, basic project
+          design, and implementation.
+        \item Coordinate multidisciplinary teams and stakeholders, seeking consensus solutions within scope, time, and
+          available budget.
+        \item Provide technical support and analysis for acquisitions of new businesses at regional level. 
     \end{itemize}
 	
-	Habilidades y herramientas:
+	Skills and tools:
 	\begin{itemize}
 		\item AutoCAD, SolidWorks, MS Excel, MS PowerPoint, MS Planner, MS Project.
 	\end{itemize}
@@ -322,102 +349,111 @@
 
 % Fake Company 2
 \cvitem{
-    \cvdurationstyle{Marzo 2020 -- Marzo 2021}
+ 	\begin{minipage}{\textwidth}
+   \begin{flushright}
+		  % \centering
+      % \vfill
+		  \includegraphics[height=0.25\textwidth]{../logos-photos/Logo_FIUBA_new.png}   
+	    % \vfill
+    \end{flushright}  
+  \end{minipage} \\
+  \vspace{0.1cm}
+  \cvdurationstyle{March 2020 -- March 2021}
 }{
-    \begin{minipage}{0.1\textwidth}
-        \centering
-        \includegraphics[width=0.8\textwidth]{../logos-photos/Logo_FIUBA.png}   
-    \end{minipage}
-    \cvtitle{Ayudante de Cátedra de Termodinámica I}
+    \cvtitle{Teaching Assistant in Thermodynamics course}
 
-    Facultad de Ingeniería, Universidad de Buenos Aires
+    \textbf{\large Faculty of Engineering, University of Buenos Aires}
+
+    Mechanical Engienering Department
 }
 
-% Fake Company 1
-\cvitem{
-    \cvdurationstyle{Enero 2017 -- Julio 2018}
-}{
-    \cvtitle{Profesor Particular de alumnos de Secundario}
-
-    \begin{itemize}[leftmargin=*]
-        \item Ayuda para planificación y explicación de asignaturas para alumnos de secundario
-    \end{itemize}
-}
 
 
 % education
 % ---------
 
-\cvsection{EDUCACIÓN}
+\cvsection{EDUCATION}
 
 % master's
 \cvitem{
-    \cvdurationstyle{2017 -- Presente}
+ 	\begin{minipage}{\textwidth}
+   \begin{flushright}
+		  % \centering
+      % \vfill
+		  \includegraphics[height=0.25\textwidth]{../logos-photos/Logo_FIUBA_new.png}   
+	    % \vfill
+    \end{flushright}  
+  \end{minipage} \\
+  \vspace{0.1cm}
+  \cvdurationstyle{2017 -- Present}
 }{
-    \begin{minipage}{0.1\textwidth}
-        \centering
-        \includegraphics[width=0.8\textwidth]{../logos-photos/Logo_FIUBA.png}   
-    \end{minipage}      
-    \cvtitle{Ingeniería Mecánica - en curso}
+  \cvtitle{Mechanical Engineering}
 
-    Facultad de Ingeniería, Universidad de Buenos Aires
+    Faculty of Engineering, University of Buenos Aires
     
     \begin{itemize}[leftmargin=*]
-        \item Materias y finales finalizados.
-        \item Tesis en curso - \textit{Análisis paramétrico de modelos de actuador discal para simulación de aerogeneradores en parques Eólicos} - CSC.
-        \item Fecha de finalización de tesis: agosto de 2024.
+        \item Thesis in progress - \textit{Parametric analysis of disk actuators models to simulate wind farms.} 
+        \begin{itemize}
+          \item CSC - CONICET.
+          \item Director: Alejandro Otero, PhD.
+          \item Co-Director: Dimas Barile.
+        \end{itemize}
+        \item Thesis end date: august 2024.
     \end{itemize}
 }
 
-%curso
-\cvitem{
-    \cvdurationstyle{Sep. 2021 -- Nov. 2021}
-}{
-    \begin{minipage}{0.1\textwidth}
-        \centering
-        \includegraphics[width=0.8\textwidth]{../logos-photos/Logo_edx.png}   
-    \end{minipage}      
-    \cvtitle{A Hands-on Introduction to Engineering Simulations}
-    edX \& Cornell University
-
-    \begin{itemize}
-        \item Curso de ANSYS
-    \end{itemize}
-}
 
 % bachelor's
 \cvitem{
+    \begin{minipage}{\textwidth}
+        \flushright
+        \includegraphics[height=0.2\textwidth]{../logos-photos/Logo_HC.png}   
+    \end{minipage}\\  
+    \vspace{0.1cm}
     \cvdurationstyle{2011 -- 2016}
 }{
-    \begin{minipage}{0.1\textwidth}
-        \centering
-        \includegraphics[width=0.8\textwidth]{../logos-photos/Logo_HC.png}   
-    \end{minipage}  
-    \cvtitle{Bachiller Bilingüe en Ciencias Sociales}
+    \cvtitle{Bilingual High School}
 
     Colegio Holy Cross
 }
 
+\cvsection{COURSES}
 
+%curso
+\cvitem{
+    \begin{minipage}{\textwidth}
+        \flushright
+        \includegraphics[height=0.15\textwidth]{../logos-photos/Logo_edx.png}   
+    \end{minipage}\\
+    \vspace{0.1cm}
+    \cvdurationstyle{Sep. 2021 -- Nov. 2021}
+}{
+    \cvtitle{A Hands-on Introduction to Engineering Simulations}
+    edX \& Cornell University
+
+    \begin{itemize}
+        \item ANSYS course
+    \end{itemize}
+}
 % skills
 % ------
-\newpage
-\cvsection{HABILIDADES}
+% \newpage
+\cvsection{SKILLS}
 
 \vspace{\cvbetweensectionandheadingextraskipamount}
 
 % languages
 \cvitem{
-    \cvheadingstyle{Idiomas}
+    \cvheadingstyle{Languages}
 }{
-    Inglés - Bilingüe
+    English - fluent 
     \begin{itemize}
-        \item Certificados IGCSE, Universidad de Cambridge
+        \item IGCSE Certificates, Universidad de Cambridge
     \end{itemize}
 
-    Francés - Básico
+    French -  basic
     \begin{itemize}
-        \item Certificados A1 y A2
+        \item A1 and A2 certificates
     \end{itemize}
 }
 
@@ -425,23 +461,31 @@
 \cvitem{
     \cvheadingstyle{Software}
 }{
-    Fusion 360 - Diseño de piezas mecánicas 3D
+    Autodesk Fusion 360
     
-    Paquete Office (Excel, Word, PowerPoint, Project)
+    MS Office (Excel, Word, PowerPoint, Project)
 
     AutoCAD
     
-    ANSYS - Simulación para ingeniería
+    ANSYS
     
-    LaTex - Elaboración de documentos técnicos y científicos
+    LaTeX 
     
-    OpenFoam - Simulación de fluidos
+    OpenFoam
 
     MatLab
 
     SolidWorks
 
     Linux
+
+    Python
+
+    Object Oriented Programming
+
+    Code\_Saturne
+
+    Salome Geometry and Meshing Modules
 }
 
 
