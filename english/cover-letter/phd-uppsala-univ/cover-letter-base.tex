@@ -1,10 +1,10 @@
-\documentclass{article}
-
+\documentclass{letter}
+\usepackage[a4paper,left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
 
 % package imports
 % ---------------
 
-\usepackage[spanish]{babel} % for correct language and hyphenation and stuff
+\usepackage[english]{babel} % for correct language and hyphenation and stuff
 \usepackage{calc}           % for easier length calculations (infix notation)
 \usepackage{enumitem}       % for configuring list environments
 \usepackage{fancyhdr}       % for setting header and footer
@@ -16,19 +16,61 @@
 \usepackage{outlines}
 \usepackage{roboto}
 \usepackage{lipsum}
+\usepackage[hidelinks]{hyperref}
 
 % font families
 \defaultfontfeatures{Ligatures=TeX} % reportedly a good idea, see https://tex.stackexchange.com/a/37251
 
-\newfontfamily{\cvnamefont}{Roboto Medium}
-\newfontfamily{\cvsectionfont}{Roboto Medium}
-\newfontfamily{\cvtitlefont}{Roboto Regular}
-\newfontfamily{\cvdurationfont}{Roboto Light Italic}
-\newfontfamily{\cvheadingfont}{Roboto Regular}
-\setmainfont{Roboto Light}
+% \newfontfamily{\cvnamefont}{Roboto Medium}
+% \newfontfamily{\cvsectionfont}{Roboto Medium}
+% \newfontfamily{\cvtitlefont}{Roboto Regular}
+% \newfontfamily{\cvdurationfont}{Roboto Light Italic}
+% \newfontfamily{\cvheadingfont}{Roboto Regular}
+% \setmainfont{Roboto Light}
 
+% \setmainfont{RobotoMonoNerdFont}[
+%     Path=\string~/.local/share/fonts/NerdFonts/,
+%     Extension = .ttf,
+%     UprightFont=*-Regular,
+%     BoldFont=*-Bold,
+%     ItalicFont=*-Italic,
+%     BoldItalicFont=*-BoldItalic
+%     ]
+
+\newcommand{\thesisname}{Parametric analysis of disk actuators models to simulate wind farms}
+
+\address{Buenos Aires \\ Argentina}
+\signature{
+  Juan Ignacio Teich \\
+  \href{mailto:juanignacioteich@gmail.com}{juanignacioteich@gmail.com} \\
+  \href{mailto:jteich@fi.uba.ar}{jteich@fi.uba.ar} \\
+  +54 9 11 6491 6389
+  }
 \begin{document}
 
-\lipsum[1-3]
+\begin{letter}{}
+\opening{Dear commitee members of the selection committe}
+
+I am writing to express my strong interest in the PhD position in meterology with focus on high-fidelity offshore wind farm modelling at the Department of Earth Sciences.
+  With a background in CFD simulation, specially focused on wind power, and about to finish a Master's Degree in Mechanical Engineer, I am confident that my profile and experience are a great match for your PhD position.
+  My Master's thesis is due to be finished by \textbf{FECHA FECHA FECHA FECHA}, so I wouldn't be able to start by the date specified in the PhD position announcement.
+  In spite of that, due to the special interest I have in the position and in hopes that my profile is suited for the position, I ask for the start date to be postponed until \textbf{FECHA FECHA FECHA}.
+
+  At the moment, I'm working on my Master's thesis titled \textit{'\thesisname'}, directed by Alejandro Otero and Dimas Barile, from the Renewable Energies Research Group at CSC (Center of Computational Simulations) in Buenos Aires.
+  Recommendation letters from both of them are attached in my application.
+  Through it's development I've acquired and applied my skills in OpenFOAM, as well as in Python scripting to post-process the output data from the CFD simulation.
+  Also, in order to simulate disk actuators that the research group hadn't developed, I've learned some C++ programming to be able to understand and modify parts of OpenFOAM's code.
+  In the near future I will be developing disk actuators to compare them in a multitude of aspects.
+
+  At the same time, at Stämm Biotech, an Argentine biotechnology startup, I'm carrying out the role of \textit{Numeric Simulation Specialist}.
+  This role has allowed me in short time to acquire further skills in OpenFOAM, particulary with it's meshing tool snappyHexMesh, allowing me to apply them in a different setting than wind power simulation.
+  Also I've gained knowledge and practice in Object Oriented Programming, both into further developing in-house simulation programs and applying them in my own post-processing scripts.
+  It has also allowed me to work inside interdisciplinary work groups, making me learn from people from backgrounds as varied as Biology, Chemistry and Software Engineering, as well as teach them from my own expertise in my field of study.
+
+My interests are alligned with continuing learning and developing my CFD simulation and development skills.
+  In particular wind power simulation is a field of special interest, which I have been lucky enough to get to work in through my Master's thesis.
+  I hope my profile is fit for the position and to hear from you in the near future.
+\closing{Sincerely,}
+\end{letter}
 
 \end{document}
