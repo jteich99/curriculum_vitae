@@ -1,0 +1,316 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc} %tipo de letra
+
+\usepackage[spanish,es-nodecimaldot]{babel} %idioma
+\usepackage{graphicx} 
+\usepackage{mathtools}
+\usepackage{float}
+\usepackage{multicol}
+\usepackage[a4paper, headsep=24pt, headheight=2cm]{geometry}
+\usepackage{anysize} 
+\usepackage{accents}
+\usepackage{changepage}
+\usepackage{caption}
+\usepackage[affil-it]{authblk}
+\usepackage{tikz}
+\usepackage{physics}
+%\usepackage[]{minted}
+\usepackage{hyperref}%para poner hiperreferencias, tipo links
+\usepackage{esint}
+\usepackage{titling}
+\usepackage{bm}
+\usepackage{import}
+\usepackage[final]{pdfpages}
+\usepackage{cancel}
+
+\usepackage{blindtext}
+\usepackage{chemfig}%ecuaciones químicas
+\usepackage{chemformula}%idem
+\usepackage[version=4]{mhchem}%idem
+\usepackage{siunitx}%unidades del sistema internacional
+\usepackage{enumitem}
+
+\usepackage{verbatim}
+\usepackage{amsmath}%matematica
+%\setcounter{MaxMatrixCols}{20}
+
+\usepackage{array,booktabs}
+%\usepackage[separate-uncertainty = true]{siunitx}
+%\sisetup{output-decimal-marker = {,}}
+%\usepackage{placeins}
+
+%\usepackage{mathabx}
+\usepackage{amssymb}
+
+%\usepackage[dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{mwe}
+
+\usetikzlibrary{arrows}%Este no necesita mucha explicación
+
+\usepackage{fancyhdr}
+\pagestyle{plain}
+
+\usepackage{framed}%para frames en todo entorno
+
+\usepackage{pgfplotstable}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+
+\usepackage{hyperref}
+\hypersetup{
+%bookmarks=true,         % show bookmarks bar
+unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+pdftoolbar=true,        % show Acrobat’s toolbar?
+pdfmenubar=true,        % show Acrobat’s menu?
+pdffitwindow=false,     % window fit to page when opened
+pdftitle={Career-Plan-Teich},    % title
+pdfauthor={JTeich},     % author
+pdfsubject={},          % subject of the document
+pdfkeywords={},
+colorlinks=true,        % false: boxed links, true: colored links
+linkcolor=black,        % color of internal links (change box color with linkbordercolor)
+citecolor=black,        % color of links to bibliography
+filecolor=magenta,      % color of file links
+urlcolor=black           % color of external links
+}
+\usepackage{multicol}
+\usepackage{outlines}
+
+\usepackage{biblatex}
+%\addbibresource{bibliografia.bib}
+
+\newcommand{\thetitle}{Higher Cycle\\ Career Plan}
+\newcommand{\theauthorJT}{Juan Ignacio Teich}
+\newcommand{\thedate}{}
+%\newcommand{\theclass}{Sistemas Hidráulicos y Neumáticos}
+%\newcommand{\thecourse}{}
+%\newcommand{\thecareer}{}
+\usepackage{fancyhdr}
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\fontfamily{phv} \footnotesize{Higher Cycle Career Plan \\ \href{mailto:jteich@fi.uba.ar}{\theauthorJT} }}
+\fancyhead[C]{\fontfamily{phv}  \centering \includegraphics[width=3cm]{depto.png}}
+\fancyhead[L]{\fontfamily{phv} \includegraphics[width=3cm]{Logo-fiuba-2.png}}
+\usepackage{lastpage}
+\fancyfoot[R]{\fontfamily{phv} \thepage}
+\fancyfoot[C]{\fontfamily{phv} \footnotesize{Av. Paseo Colón 850 - C1063ACV - Buenos Aires - Argentina}}
+\allowdisplaybreaks
+\newcommand{\Cancel}[2][black]{{\color{#1}\cancel{\color{black}#2}}}
+
+\usetikzlibrary{shapes}
+\numberwithin{equation}{subsection}
+
+%\usepackage{xpatch}
+%\xpatchcmd{\section}{\normalfont\Large\bfseries}{\sectionbox}{}{\PatchFailed}
+
+\newcommand*{\sectionbox}[1]{%
+	\noindent \begin{tcolorbox}
+		[
+		colback=blue!70,% background
+		colframe=blue,% frame colour
+		coltext=white, % text color
+		width=\linewidth,%
+		height=0.7cm, 
+		halign=left,
+		valign=center,
+		fontupper=\large\bfseries,
+		arc=0mm, auto outer arc,
+		]
+		#1
+	\end{tcolorbox} 
+} %
+
+\usepackage{longtable}
+
+\usepackage{sectsty}
+\sectionfont{\large}
+
+\nocite{*}
+
+
+
+\begin{document}
+\fontfamily{phv}
+\pagestyle{empty}
+
+Dear members of the evaluation comitee,
+
+\indent \indent Since I have not yet finished my 6 year Mechanical Engineering Degree, I cannot attach my diploma to my aplication. But, in order to prove that I have no courses left and I am solely finishing my thesis, I attach in the following my 'Plan de Carrera de Ciclo Superior', or 'Higher Cycle Carrer Plan', translated to english for better understanding.
+
+
+\newpage
+\pagestyle{fancy}
+\begin{titlepage}
+    \begin{center}
+    \includegraphics[width=0.35\textwidth]{Logo-fiuba-2.png} \hfill \includegraphics[width=0.35\textwidth]{depto.png}\\
+    \vspace{1cm}
+    {\bfseries \LARGE Faculty of Engineering}\\
+    \vspace{0.5cm}
+    {\scshape \Large University of Buenos Aires}\\
+    \vspace{3cm}
+    {\scshape \Huge \thetitle}\\
+    \end{center}
+    %\vspace{1cm}
+    %{\scshape \Large \theclass}\\
+    \vfill
+    {\Large Student:\\[10pt] \indent\theauthorJT\; (102247)\\[10pt] \indent jteich@fi.uba.ar}\\[20pt]
+    {\Large Academic Supervisor:\\[10pt] \indent Dr. Ing. Otero, Alejandro Daniel\\[10pt] \indent Investigador Adjunto (CONICET) - Profesor Adjunto (FIUBA) \\[10pt] \indent aotero@fi.uba.ar}\\
+    \vfill
+    \begin{center}
+		{\large \thedate}
+    \end{center}
+\end{titlepage}
+
+\vbox{
+	{\large
+	\noindent\begin{minipage}[t][0.5\textheight][t]{\textwidth}
+		\sectionbox{Student Information:}
+		\vspace{0.5cm}
+		\begin{tabular}{l l}
+			Name and Surname & Juan Ignacio Teich\\
+			Student Number & 102247\\
+			Credits & 242\\
+			Working & Yes\\
+			Name of Company & Stämm Biotech\\
+      Activity & Numeric Simulations\\
+			Phone Number & +54-11-6491-6389\\
+			e-mail & jteich@fi.uba.ar
+		\end{tabular}
+		\vspace{2cm}
+		\begin{flushright}
+			Signature
+    \end{flushright}
+	\end{minipage}
+	
+	\nointerlineskip
+	\noindent \begin{minipage}[b][0.5\textheight][t]{\textwidth}
+		\vspace{0.4in}
+		\sectionbox{Academic Supervisor Information:}
+		\vspace{0.5cm}
+		\begin{tabular}{l l}
+			Name and Surname & Alejandro Daniel Otero\\
+      University Degree & Ingeniero Mecánico\\
+			University & Faculty of Engineering, University of Buenos Aires\\
+			Department & Energy\\
+			Main Activity & Research\\			
+			Phone Number & +54-11-5982-3027\\
+			e-mail & aotero@fi.uba.ar
+		\end{tabular}
+		\vspace{2cm}
+		\begin{flushright}
+		Signature	
+		\end{flushright}
+	\end{minipage}
+	}
+}
+\normalsize
+\noindent\sectionbox{Professional Profile}
+
+Mechanical Engineer with orientation towards numeric simulation. The elective courses were chosen due to my interest in the previously mentioned orientation, carrying out all possible courses: \textit{Introduction to the Finite Element Method}, \textit{Introduction to Tensorial Analysis}, \textit{Continuum Mechanics}, {Advanced Finite Elements} and {Advanced Finite Elements in Fluid Mechanics}. This courses, alongside \textit{Fluid Mechanics} will be the key for the development of the Mechanical Engineering Thesis.
+
+On the other side, I complemented my profile with courses with varied orientations in other to have a more rounded profile. I attended \textit{Machine Elements} and \textit{Ferrous Materials and their Applications} to further improve my mechanic design abilities. I attended \textit{Heat and Mass Transfer} and \textit{Combustion} to further improbe my thermomechanic oriented abilities. And finally I attended \textit{Probablity and Stadistics}.
+
+% Ingeniero Mecánico con orientación a la simulación por métodos numéricos. Las materias optativas fueron elegidas por mi interés en la orientación mencionada, desarrollando todas las materias optativas disponibles al respecto: \textit{Intro. al Método de los Elementos Finitos (67.58)}, \textit{Intro al Análisis Tensorial (67.60)}, \textit{Mecánica del Continuo (67.59)}, \textit{Elementos Finitos Avanzados (67.62)} y \textit{Elementos Finitos Avanzados en la Mecánica de Fluidos (67.57)}. Estas materias, en conjunto con \textit{Mecánica de los Fluidos} facilitarán el desarrollo de la TIM.
+
+% Por otro lado, opté por completar mi perfil con materias de orientaciones variadas, para tener un perfil más completo. Para completar mi perfil en cuanto al diseño mecánico, opté por realizar \textit{Elementos de Máquinas (67.25)} y \textit{Materiales Ferrosos y sus Aplicaciones (67.50)}. Para completar en cuanto a la rama termomecánica, opté por realizar \textit{Transferencia de Calor y Masa (67.31)} y \textit{Combustión (67.30)}. Además realicé para completar mi perfil de manera general la materia \textit{Probabilidad y Estadística (61.06)}.
+
+\pagebreak
+\pgfplotstableset{
+	begin table=\begin{longtable},
+		every head row/.style={before row=\hline, after row=\hline \hline},
+		every last row/.style={after row=\hline},
+		end table= \end{longtable},
+}
+\noindent\sectionbox{Ciclo Básico Común (CBC) Detail}
+\pgfplotstabletypeset[
+col sep=comma,
+string type,
+columns={Course, Grade, Year, Semester},
+columns/Course/.style={column name=Course, column type={|c}},
+columns/Grade/.style={column name=Grade, column type={|c}},
+columns/Year/.style={column name=Year, column type={|c}},
+columns/Semester/.style={column name=Semester, column type={|c|}},
+]{cbc.csv}
+
+\noindent\sectionbox{Mechanical Engineering (FIUBA) Detail}
+\textbf{\large Completed Compulsive Courses}
+
+\pgfplotstabletypeset[
+col sep=comma,
+string type,
+columns={Code, Course, Credits, Grade, Year, Semester},
+columns/Code/.style={column name=Code, column type={|c}},
+columns/Course/.style={column name=Course, column type={|c}},
+columns/Credits/.style={column name=Credits, column type={|c}},
+columns/Grade/.style={column name=Grade, column type={|c}},
+columns/Year/.style={column name=Year, column type={|c}},
+columns/Semester/.style={column name=Semester, column type={|c|}},
+]{historia_academica.csv}
+
+\textbf{\large Completed Elective Courses}
+
+\pgfplotstabletypeset[
+col sep=comma,
+string type,
+columns={Code, Course, Credits, Grade, Year, Semester},
+columns/Code/.style={column name=Code, column type={|c}},
+columns/Course/.style={column name=Course, column type={|c}},
+columns/Credits/.style={column name=Credits, column type={|c}},
+columns/Grade/.style={column name=Grade, column type={|c}},
+columns/Year/.style={column name=Year, column type={|c}},
+columns/Semester/.style={column name=Semester, column type={|c|}},
+]{optativas.csv}
+
+
+\textbf{\large Compulsive Courses Remaining}
+\pgfplotstabletypeset[
+col sep=comma,
+string type,
+columns={Code, Course, Credits, Year, Semester},
+columns/Code/.style={column name=Code, column type={|c}},
+columns/Course/.style={column name=Course, column type={|c}},
+columns/Credits/.style={column name=Credits, column type={|c}},
+columns/Year/.style={column name=Year, column type={|c}},
+columns/Semester/.style={column name=Semester, column type={|c|}},
+]{oblporcursar.csv}
+
+\textbf{\large Elective Courses Remaining}
+\pgfplotstabletypeset[
+col sep=comma,
+string type,
+columns={Code, Course, Credits, Year, Semester},
+columns/Code/.style={column name=Code, column type={|c}},
+columns/Course/.style={column name=Course, column type={|c}},
+columns/Credits/.style={column name=Credits, column type={|c}},
+columns/Year/.style={column name=Year, column type={|c}},
+columns/Semester/.style={column name=Semester, column type={|c|}},
+]{optporcursar.csv}
+
+\newpage
+\noindent\sectionbox{Credits Distribution Summary at end of Degree}
+\large
+\begin{center}
+\begin{tabular}{l | c}
+	 & Credits\\ \hline
+	Compulsive Courses & 190\\
+	Elective Courses & 52\\
+	Extra Curricular Credits & 0\\
+	Thesis & 18\\ \hline \hline \addlinespace
+	\textbf{Total} & \textbf{260}\\
+\end{tabular}
+\end{center}
+
+\normalsize
+\vspace{25mm}
+\noindent\begin{tabular}{p{2in}p{2in}p{2in}}
+	 % && \includegraphics[width=4cm]{firma-JIT.png}\\
+	\hrulefill && \hrulefill \\
+	Academic Supervisor Signature &&  Student Signature\\
+	Alejandro Otero && Juan Ignacio Teich (102247)
+\end{tabular}
+
+\end{document}
