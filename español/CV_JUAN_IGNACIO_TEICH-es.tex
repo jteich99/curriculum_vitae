@@ -80,6 +80,7 @@
 \newcommand{\cvnamestyle}[1]{{\Large\cvnamefont\textcolor{cvnamecolor}{#1}}}
 \newcommand{\cvsectionstyle}[1]{{\normalsize\cvsectionfont\textcolor{cvsectioncolor}{#1}}}
 \newcommand{\cvtitlestyle}[1]{{\large\cvtitlefont\textcolor{cvtitlecolor}{#1}}}
+\newcommand{\cvsubtitlestyle}[1]{{\cvtitlefont\textcolor{cvtitlecolor}{#1}}}
 \newcommand{\cvdurationstyle}[1]{{\small\cvdurationfont\textcolor{cvdurationcolor}{#1}}}
 \newcommand{\cvheadingstyle}[1]{{\normalsize\cvheadingfont\textcolor{cvheadingcolor}{#1}}}
 
@@ -244,7 +245,8 @@
 
     % address
     \cvpersonalinfolinewithicon{height=4mm}{../logos-photos/072-location.pdf}{
-        Azcuénaga 2529, Martinez, Buenos Aires, Argentina
+        % Azcuénaga 2529, Martinez, Buenos Aires, Argentina
+        Buenos Aires, Argentina
     }
 
     % phone number
@@ -263,7 +265,8 @@
     % }
 
     % date of birth
-        22-03-1999  -   24 años
+        % 22-03-1999  -   24 años
+        25 años
 }
 
 
@@ -282,6 +285,26 @@
 \cvsection{EXPERIENCIA LABORAL}
 
 \cvitem{
+	\cvdurationstyle{Abril 2024 -- Agosto 2024}
+}{
+	\begin{minipage}{0.1\textwidth}
+		\centering
+		\includegraphics[width=0.8\textwidth]{../logos-photos/Logo_CSC.png}   
+	\end{minipage}
+	\cvtitle{Tesista de Ingeniería Mecánica}
+	
+	\cvsubtitlestyle{Grupo de Energías Renovables - CSC - CONICET}
+
+    Desarrollo de Tesis de Ingeniería Mećanica, titulada: \textit{Análisis Paramétrico de Actuadores Discales para Simulación
+    de Aerogeneradores en Parques Eólicos}.
+
+    Habilidades y herramientas:
+    \begin{itemize}
+        \item OpenFOAM, Python, Programación Orientada a Objetos, Bash, Linux, uso de Clústers.
+    \end{itemize}
+}
+
+\cvitem{
 	\cvdurationstyle{Octubre 2023 -- Abril 2024}
 }{
 	\begin{minipage}{0.1\textwidth}
@@ -290,8 +313,8 @@
 	\end{minipage}
 	\cvtitle{Numerical Simulations Specialist}
 	
-	\textbf{STÄMM Biotech}
-	
+	\cvsubtitlestyle{STÄMM Biotech}
+
     Responsabilidades:
     \begin{itemize}
         \item Desarrollo de estrategias de mallado para estructuras complejas repetitivas.
@@ -320,7 +343,7 @@
     \end{minipage}
     \cvtitle{Líder Junior de Proyectos Estratégicos}
 
-    \textbf{Saint-Gobain Argentina}
+    \cvsubtitlestyle{Saint-Gobain Argentina}
 	
 	Tareas desarrolladas:
     \begin{itemize}
@@ -368,19 +391,18 @@
 
 % master's
 \cvitem{
-    \cvdurationstyle{2017 -- Presente}
+    \cvdurationstyle{2017 -- 2024}
 }{
     \begin{minipage}{0.1\textwidth}
         \centering
         \includegraphics[width=0.8\textwidth]{../logos-photos/Logo_FIUBA.png}   
     \end{minipage}      
-    \cvtitle{Ingeniería Mecánica - en curso}
+    \cvtitle{Ingeniería Mecánica}
 
     Facultad de Ingeniería, Universidad de Buenos Aires
     
     \begin{itemize}[leftmargin=*]
-        \item Materias y finales finalizados.
-        \item Tesis en curso - \textit{Análisis paramétrico de modelos de actuador discal para simulación de aerogeneradores en parques Eólicos} - CSC.
+        \item Tesis - \textit{Análisis paramétrico de modelos de actuador discal para simulación de aerogeneradores en parques Eólicos} - CSC.
         \item Fecha de finalización de tesis: agosto de 2024.
     \end{itemize}
 }
