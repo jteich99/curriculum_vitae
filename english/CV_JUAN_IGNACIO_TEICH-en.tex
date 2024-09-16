@@ -23,6 +23,8 @@
 \usepackage{outlines}
 \usepackage{roboto}
 \usepackage{fontspec}
+\usepackage[inkscapeformat=png]{svg}
+\usepackage{hyperref}
 % margin and column widths
 % ------------------------
 
@@ -171,6 +173,16 @@
     \vspace{\cvafterpersonalinfolineskipamount}
 }
 
+\newcommand{\cvpersonalinfolinewithiconsvg}[3]{
+    % icon, vertically aligned with text (see https://tex.stackexchange.com/a/129463)
+    \raisebox{.5\fontcharht\font`E-.5\height}{\includesvg[#1]{#2}}
+    % text
+    #3
+
+    % space after
+    \vspace{\cvafterpersonalinfolineskipamount}
+}
+
 % creates a "section" CV item with the given left column content, a horizontal rule in the right column, and with
 % appropriate vertical space after
 % @param #1 left column content (should be the section name)
@@ -236,26 +248,30 @@
 % personal info
 % -------------
 
-% \cvpersonalinfo{
+\cvpersonalinfo{
     % photo
   % \includegraphics[trim={0 7cm 0 5cm},clip,height=36mm]{../logos-photos/photo-JIT-2023.jpg}
-% }{
-  \flushright
+    \hspace{7cm}
+}{
+  % \flushright
     % name
     \cvname{Teich, Juan Ignacio}
 
     % address
-    \cvpersonalinfolinewithicon{height=4mm}{../logos-photos/072-location.pdf}{
+    % \cvpersonalinfolinewithicon{height=4mm}{../logos-photos/072-location.pdf}{
+    \cvpersonalinfolinewithiconsvg{height=4mm}{../logos-photos/location-dot-solid.svg}{
        Buenos Aires, Argentina
     }
 
     % phone number
-    \cvpersonalinfolinewithicon{height=4mm}{../logos-photos/067-phone.pdf}{
+    % \cvpersonalinfolinewithicon{height=4mm}{../logos-photos/067-phone.pdf}{
+    \cvpersonalinfolinewithiconsvg{height=4mm}{../logos-photos/phone-solid.svg}{
         +54 11\,6491\,6389
     }
 
     % email address
-    \cvpersonalinfolinewithicon{height=4mm}{../logos-photos/070-envelop.pdf}{
+    % \cvpersonalinfolinewithicon{height=4mm}{../logos-photos/070-envelop.pdf}{
+    \cvpersonalinfolinewithiconsvg{height=3mm}{../logos-photos/envelope-solid.svg}{
         juanignacioteich@gmail.com
     }
 
@@ -265,8 +281,22 @@
     % }
 
     % date of birth
-        22-03-1999  ---   24 years
-% }
+    \cvpersonalinfolinewithiconsvg{height=4mm}{../logos-photos/calendar-days-solid.svg}{
+        25 years
+    }
+
+    % profession 
+    \cvpersonalinfolinewithiconsvg{height=4mm}{../logos-photos/gear-solid.svg}{
+        Mechanical Engineer 
+    }
+
+    % github
+    \cvpersonalinfolinewithiconsvg{height=4mm}{../logos-photos/github-brands-solid.svg}{
+        GitHub profile: \href{https://github.com/jteich99}{jteich99}   
+    }
+
+}
+
 
 % work experience
 % ---------------
@@ -275,13 +305,47 @@
 \vspace{\cvbetweensectionandheadingextraskipamount}
 \cvitem{\cvheadingstyle{}}{
     To continue my professional career, pursuing challenging projects and applying the skills acquired in my academic
-    journey.
+    journey, while acquiring new skills and tools for my professional career.
 
-    I aim to focus on simulation and it's development to adress and better understand industry problems.
+    I aim to focus on simulation and it's development, working on taking key mathematic and physics concepts into code to adress and better understand industry problems.
 }
 
 
 \cvsection{WORK EXPERIENCE}
+\cvitem{
+	\begin{minipage}{\textwidth}
+    \begin{flushright}
+		  % \centering
+      % \vfill
+		  \includegraphics[width=0.5\textwidth]{../logos-photos/Logo_CSC.png}   
+	    % \vfill
+    \end{flushright}  
+  \end{minipage} \\
+  \vspace{0.3cm}
+  \cvdurationstyle{April 2024 -- August 2024}\\
+}{
+	
+  \cvtitle{Mechanical Engineering Thesist}
+  \textbf{\large Grupo de Energías Renovables - CSC - CONICET}
+
+  I completed my Mechanical Engineering Thesis titled: 'Parametric study of actuator discs for wind turbine simulation'
+  (\href{https://drive.google.com/file/d/1TWklGPKCdaIwJHuOc-fqAFvFS9hN7_sT/view?usp=sharing}{link to thesis in spanish}).
+
+  Main tasks:
+  \begin{itemize}
+    \item Carry a bibliographic research on actuator discs models for wind turbine simulation.
+    \item Develop the researched models' algorithms into OpenFOAM as a new source term.
+    \item Run simulations in CONICET's cluster TUPAC.
+    \item Generate multiple plots and metrics for comparing the actuator disc models performance in simulations.
+  \end{itemize}
+
+  Skills and tools:
+  \begin{itemize}
+    \item OpenFOAM, snappyHexMesh, Python, Object Oriented Programming, Bash, Linux, Algorithms,
+        C++, LaTeX, SSH, HPC, GitHub
+  \end{itemize}
+  
+}
 
 \cvitem{
 	\begin{minipage}{\textwidth}
@@ -293,7 +357,7 @@
     \end{flushright}  
   \end{minipage} \\
   \vspace{0.3cm}
-  \cvdurationstyle{October 2023 -- Present}\\
+  \cvdurationstyle{October 2023 -- April 2024}\\
 }{
 	
   \cvtitle{Numerical Simulations Specialist}
@@ -310,7 +374,7 @@
   Skills and tools:
   \begin{itemize}
     \item OpenFOAM, Code\_Saturne, snappyHexMesh, Salome Geometry and Meshing modules, Python, Object Oriented
-      Programming, Bash, Linux 
+      Programming, Bash, Linux, Algorithms, C++, LaTeX, GitHub
   \end{itemize}
 	
 }
@@ -385,20 +449,20 @@
     \end{flushright}  
   \end{minipage} \\
   \vspace{0.1cm}
-  \cvdurationstyle{2017 -- Present}
+  \cvdurationstyle{2017 -- 2024}
 }{
   \cvtitle{Mechanical Engineering}
 
     Faculty of Engineering, University of Buenos Aires
     
     \begin{itemize}[leftmargin=*]
-       \item \textsf{Thesis in progress - Parametric analysis of disk actuators models to simulate wind farms.} 
+       \item \textsf{Thesis - Parametric study actuator discs for wind turbine simulation.} 
         \begin{itemize}
           \item CSC - CONICET - Argentina.
           \item Director: Alejandro Otero, PhD.
           \item Co-Director: Dimas Barile.
+          \item \href{https://drive.google.com/file/d/1TWklGPKCdaIwJHuOc-fqAFvFS9hN7_sT/view?usp=sharing}{Link to thesis in spanish}.
         \end{itemize}
-        \item Thesis end date: august 2024.    
     \end{itemize}
 }
 
@@ -458,35 +522,35 @@
 }
 
 %software
-\cvitem{
-    \cvheadingstyle{Software}
-}{
-    Autodesk Fusion 360
-    
-    MS Office (Excel, Word, PowerPoint, Project)
+% \cvitem{
+%     \cvheadingstyle{Software}
+% }{
+%     Autodesk Fusion 360
+%     
+%     MS Office (Excel, Word, PowerPoint, Project)
 
-    AutoCAD
-    
-    ANSYS
-    
-    LaTeX 
-    
-    OpenFoam
+%     AutoCAD
+%     
+%     ANSYS
+%     
+%     LaTeX 
+%     
+%     OpenFoam
 
-    MatLab
+%     MatLab
 
-    SolidWorks
+%     SolidWorks
 
-    Linux
+%     Linux
 
-    Python
+%     Python
 
-    Object Oriented Programming
+%     Object Oriented Programming
 
-    Code\_Saturne
+%     Code\_Saturne
 
-    Salome Geometry and Meshing Modules
-}
+%     Salome Geometry and Meshing Modules
+% }
 
 
 %\cvsection{INTERESES PERSONALES}
