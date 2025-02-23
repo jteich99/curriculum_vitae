@@ -257,43 +257,44 @@
     % name
     \cvname{Teich, Juan Ignacio}
 
-    % address
-    % \cvpersonalinfolinewithicon{height=4mm}{../logos-photos/072-location.pdf}{
-    \cvpersonalinfolinewithiconsvg{height=4mm}{../logos-photos/location-dot-solid.svg}{
-       Buenos Aires, Argentina
-    }
+    \begin{minipage}{.5\linewidth}
+        % address
+        \cvpersonalinfolinewithiconsvg{height=4mm}{../logos-photos/location-dot-solid.svg}{
+           Buenos Aires, Argentina
+        }
 
-    % phone number
-    % \cvpersonalinfolinewithicon{height=4mm}{../logos-photos/067-phone.pdf}{
-    \cvpersonalinfolinewithiconsvg{height=4mm}{../logos-photos/phone-solid.svg}{
-        +54 11\,6491\,6389
-    }
+        % phone number
+        \cvpersonalinfolinewithiconsvg{height=4mm}{../logos-photos/phone-solid.svg}{
+            +54 11\,6491\,6389
+        }
 
-    % email address
-    % \cvpersonalinfolinewithicon{height=4mm}{../logos-photos/070-envelop.pdf}{
-    \cvpersonalinfolinewithiconsvg{height=3mm}{../logos-photos/envelope-solid.svg}{
-        juanignacioteich@gmail.com
-    }
+        % email address
+        \cvpersonalinfolinewithiconsvg{height=3mm}{../logos-photos/envelope-solid.svg}{
+            juanignacioteich@gmail.com
+        }
+    \end{minipage}
+    \begin{minipage}{.5\linewidth}
+        % date of birth
+        \cvpersonalinfolinewithiconsvg{height=4mm}{../logos-photos/calendar-days-solid.svg}{
+            25 years old
+        }
 
-    % % LinkedIn account
-    % \cvpersonalinfolinewithicon{height=4mm}{458-linkedin.pdf}{
-    %     fake-name-123456789
-    % }
+        % profession 
+        \cvpersonalinfolinewithiconsvg{height=4mm}{../logos-photos/gear-solid.svg}{
+            Mechanical Engineer 
+        }
 
-    % date of birth
-    \cvpersonalinfolinewithiconsvg{height=4mm}{../logos-photos/calendar-days-solid.svg}{
-        25 years
-    }
+        % nationality 
+        \cvpersonalinfolinewithiconsvg{height=4mm}{../logos-photos/flag-solid.svg}{
+            Argentinian and Spanish citizen 
+        }
+    \end{minipage}
 
-    % profession 
-    \cvpersonalinfolinewithiconsvg{height=4mm}{../logos-photos/gear-solid.svg}{
-        Mechanical Engineer 
-    }
 
     % github
-    \cvpersonalinfolinewithiconsvg{height=4mm}{../logos-photos/github-brands-solid.svg}{
-        GitHub profile: \href{https://github.com/jteich99}{jteich99}   
-    }
+    % \cvpersonalinfolinewithiconsvg{height=4mm}{../logos-photos/github-brands-solid.svg}{
+    %     GitHub profile: \href{https://github.com/jteich99}{jteich99}   
+    % }
 
 }
 
@@ -302,16 +303,60 @@
 % ---------------
 \cvsection{PROFESSIONAL OBJECTIVES}
 
-\vspace{\cvbetweensectionandheadingextraskipamount}
+% \vspace{\cvbetweensectionandheadingextraskipamount}
 \cvitem{\cvheadingstyle{}}{
-    To continue my professional career, pursuing challenging projects and applying the skills acquired in my academic
-    journey, while acquiring new skills and tools for my professional career.
+    % To continue my professional career, pursuing challenging projects and applying the skills acquired in my academic
+    % journey, while acquiring new skills and tools for my professional career.
 
-    I aim to focus on simulation and it's development, working on taking key mathematic and physics concepts into code to adress and better understand industry problems.
+    % I aim to focus on simulation and it's development, working on taking key mathematic and physics concepts into code to adress and better understand industry problems.
+
+    % Continue my professional and academic career pursuing challenging projects in a PhD and applying the skills acquired
+    % through my journey so far, while developing new skills and tools for my professional and academic career.
+    Continue my professional career in Europe pursuing challenging projects and applying the skills acquire through my journey so
+    far, while developing new skills and tools.
+
+    % I aim to focus on simulation and it's development to adress and better understand industry problems.
+    I aim to focus on fluid simulation and it's development, working on taking key mathematic and physics concepts into
+    code to adress and better understand industry problems, while always trying to break new ground.
 }
 
 
 \cvsection{WORK EXPERIENCE}
+
+\cvitem{
+	\begin{minipage}{\textwidth}
+    \begin{flushright}
+		  % \centering
+      % \vfill
+		  \includegraphics[width=0.5\textwidth]{../logos-photos/Logo_NASA.png}   
+	    % \vfill
+    \end{flushright}  
+  \end{minipage} \\
+  \vspace{0.3cm}
+  \cvdurationstyle{December 2024 -- Present}\\
+}{
+	
+  \cvtitle{Thermohydraulic Design Engineer}
+  \textbf{\large Nucleoeléctrica Argentina S.A.}
+
+  Perform therohydraulic calculations and simulations to insure the safety and operation of the Atucha I and II Nuclear
+  Plants.
+
+  Main tasks:
+  \begin{itemize}
+    \item Develop a Method of Characteristics program to simulate incompressible and compressible flow in pipe systems, and
+        capturing water hammer phenomena.
+    \item Perfom CFD simulations to analyze key accident events. 
+    \item Research on new simulation methodologies to expand the capabilities of the Thermohydraulic Design Department.
+  \end{itemize}
+
+  Skills and tools:
+  \begin{itemize}
+      \item ANSYS Fluent, CFD, C++, Fluid Dynamics, Heat and Mass Transfer, Method of Characteristics, Python.
+  \end{itemize}
+  
+}
+
 \cvitem{
 	\begin{minipage}{\textwidth}
     \begin{flushright}
@@ -341,7 +386,7 @@
 
   Skills and tools:
   \begin{itemize}
-    \item OpenFOAM, snappyHexMesh, Python, Object Oriented Programming, Bash, Linux, Algorithms,
+    \item OpenFOAM, Fluid Dynamics, snappyHexMesh, Python, Object Oriented Programming, Bash, Linux, Algorithms,
         C++, LaTeX, SSH, HPC, GitHub
   \end{itemize}
   
@@ -362,6 +407,8 @@
 	
   \cvtitle{Numerical Simulations Specialist}
   \textbf{\large STÄMM Biotech}
+
+  % Reference contact: Victoria Paes de Lima, Numeric Simulations Dept. Leader. \href{victoria@stamm.bio}{victoria@stamm.bio}
   
   Responsabilities:
   \begin{itemize}
@@ -373,7 +420,7 @@
   
   Skills and tools:
   \begin{itemize}
-    \item OpenFOAM, Code\_Saturne, snappyHexMesh, Salome Geometry and Meshing modules, Python, Object Oriented
+    \item OpenFOAM, Code\_Saturne, Fluid Dynamics, snappyHexMesh, Salome Geometry and Meshing modules, Python, Object Oriented
       Programming, Bash, Linux, Algorithms, C++, LaTeX, GitHub
   \end{itemize}
 	
@@ -399,15 +446,15 @@
     \begin{itemize}
         \item Lead strategic projects, including analyzing the company's needs for business continuity, basic project
           design, and implementation.
-        \item Coordinate multidisciplinary teams and stakeholders, seeking consensus solutions within scope, time, and
-          available budget.
-        \item Provide technical support and analysis for acquisitions of new businesses at regional level. 
+        % \item Coordinate multidisciplinary teams and stakeholders, seeking consensus solutions within scope, time, and
+        %   available budget.
+        % \item Provide technical support and analysis for acquisitions of new businesses at regional level. 
     \end{itemize}
 	
-	Skills and tools:
-	\begin{itemize}
-		\item AutoCAD, SolidWorks, MS Excel, MS PowerPoint, MS Planner, MS Project.
-	\end{itemize}
+	% Skills and tools:
+	% \begin{itemize}
+	% 	\item AutoCAD, SolidWorks, MS Excel, MS PowerPoint, MS Planner, MS Project.
+	% \end{itemize}
 
 }
 
@@ -459,8 +506,8 @@
        \item \textsf{Thesis - Parametric study actuator discs for wind turbine simulation.} 
         \begin{itemize}
           \item CSC - CONICET - Argentina.
-          \item Director: Alejandro Otero, PhD.
-          \item Co-Director: Dimas Barile.
+          % \item Director: Alejandro Otero, PhD.
+          % \item Co-Director: Dimas Barile.
           \item \href{https://drive.google.com/file/d/1TWklGPKCdaIwJHuOc-fqAFvFS9hN7_sT/view?usp=sharing}{Link to thesis in spanish}.
         \end{itemize}
     \end{itemize}
@@ -481,24 +528,25 @@
     Colegio Holy Cross
 }
 
-\cvsection{COURSES}
+% \cvsection{COURSES}
 
-%curso
-\cvitem{
-    \begin{minipage}{\textwidth}
-        \flushright
-        \includegraphics[height=0.15\textwidth]{../logos-photos/Logo_edx.png}   
-    \end{minipage}\\
-    \vspace{0.1cm}
-    \cvdurationstyle{Sep. 2021 -- Nov. 2021}
-}{
-    \cvtitle{A Hands-on Introduction to Engineering Simulations}
-    edX \& Cornell University
+% %curso
+% \cvitem{
+%     \begin{minipage}{\textwidth}
+%         \flushright
+%         \includegraphics[height=0.15\textwidth]{../logos-photos/Logo_edx.png}   
+%     \end{minipage}\\
+%     \vspace{0.1cm}
+%     \cvdurationstyle{Sep. 2021 -- Nov. 2021}
+% }{
+%     \cvtitle{A Hands-on Introduction to Engineering Simulations}
+%     edX \& Cornell University
 
-    \begin{itemize}
-        \item ANSYS course
-    \end{itemize}
-}
+%     \begin{itemize}
+%         \item ANSYS course
+%     \end{itemize}
+% }
+
 % skills
 % ------
 % \newpage
@@ -512,13 +560,13 @@
 }{
     English - fluent 
     \begin{itemize}
-        \item IGCSE Certificates, Universidad de Cambridge
+        \item IGCSE Certificates, Cambridge University 
     \end{itemize}
 
-    French -  basic
-    \begin{itemize}
-        \item A1 and A2 certificates
-    \end{itemize}
+    % French -  basic
+    % \begin{itemize}
+    %     \item A1 and A2 certificates
+    % \end{itemize}
 }
 
 %software
